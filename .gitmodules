@@ -1,0 +1,3 @@
+[submodule "src/ONE.Interfaces.ProtocolBuffers"]
+	path = src/ONE.Interfaces.ProtocolBuffers
+	url = git@github.com:AquaticInformatics/ONE.Interfaces.ProtocolBuffers.git
