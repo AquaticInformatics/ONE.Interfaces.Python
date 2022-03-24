@@ -11,7 +11,7 @@ except ImportError:
     from distutils.core import setup
 
 
-NAME = 'claros_interfaces'
+NAME = 'one_interfaces'
 
 
 def read_file(path, encoding='ascii'):
@@ -32,14 +32,14 @@ def get_version(path):
 
 setup(
     name=NAME,
-    version=get_version(os.path.join('claros_interfaces', '__init__.py')),
-    description='Python bindings for Claros.',
+    version=get_version(os.path.join('one_interfaces', '__init__.py')),
+    description='Python bindings for ONE.',
     long_description=read_file('README.md'),
-    keywords='claros interfaces python',
+    keywords='ONE interfaces python',
     author='Aquatic Informatics',
     author_email='info@aquaticinformatics.com',
     maintainer='Aquatic Informatics',
-    url='https://github.com/aquaticinformatics/claros_interfaces',
+    url='https://github.com/aquaticinformatics/one_interfaces',
     license='BSD',
     packages=[NAME],
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',

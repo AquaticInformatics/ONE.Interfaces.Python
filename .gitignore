@@ -349,7 +349,5 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-nuget/CsProto2Json/CsProto2Json/obj/
-
-nuget/Claros.Interfaces.CSharp/generated
-nuget/claros_interfaces_python
+src/ONE.Interfaces.CSharp/generated
+src/one_interfaces_python
