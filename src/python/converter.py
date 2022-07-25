@@ -8,7 +8,7 @@ except:
 files.remove('__init__.py')
 files.remove('converter.py')
 exp =re.compile("import .*_pb2")
-matches =[]
+
 print(files)
 for file in files:
     f =open(file, 'r+')
@@ -20,9 +20,7 @@ for file in files:
             line = "from . "+ line
             newLines.append(line)
         except (AttributeError):
-            newLines.append(line)
-            pass
-    print(lines)
+            newLines.append(line)          
     f.close()
     f=open(file,'w+')
     f.writelines(newLines)
