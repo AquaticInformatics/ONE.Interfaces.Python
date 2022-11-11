@@ -13,9 +13,8 @@ protobuf runtime
 Usage
 =====
 pip install one_interfaces-<version>-py2.py3-none-any.whl
-Add the module to the sys.path by either adding the module path to PYTHONPATH 
-or copy one_interfaces.pth to the python site-packages directory.
-
+or once package has been published to pypi
+pip install one_interfaces==<version>
 Testing
 =======
 
