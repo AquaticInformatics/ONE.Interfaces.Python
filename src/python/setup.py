@@ -5,6 +5,7 @@ from __future__ import with_statement
 from io import open
 import os
 import re
+from unicodedata import name
 try:
     from setuptools import setup
 except ImportError:
@@ -12,7 +13,6 @@ except ImportError:
 
 
 NAME = 'one_interfaces'
-
 
 def read_file(path, encoding='ascii'):
     with open(os.path.join(os.path.dirname(__file__), path),
@@ -32,16 +32,16 @@ def get_version(path):
 
 setup(
     name=NAME,
-    version=get_version(os.path.join('one_interfaces', '__init__.py')),
+    version=get_version(os.path.join(NAME, '__init__.py')),
     description='Python bindings for ONE.',
-    long_description=read_file('README.md'),
+    long_description=read_file('README.md'),    
     keywords='ONE interfaces python',
     author='Aquatic Informatics',
     author_email='info@aquaticinformatics.com',
     maintainer='Aquatic Informatics',
     url='https://github.com/aquaticinformatics/one_interfaces',
     license='BSD',
-    packages=[NAME],
+    packages=[NAME],    
     python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*',
     # see classifiers https://pypi.org/pypi?%3Aaction=list_classifiers
     classifiers=[
