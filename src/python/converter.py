@@ -1,6 +1,6 @@
 import re
 import os
-files =os.listdir()
+files =os.listdir('.')
 try:
     files.remove('__pycache__')
 except:
